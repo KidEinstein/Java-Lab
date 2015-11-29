@@ -1,0 +1,19 @@
+
+public class StringBuilderOperations {
+
+	public static void main(String[] args) {
+		StringBuilder str = new StringBuilder("apple");
+		System.out.println(str);
+		str.setCharAt(0, 'b');
+		System.out.println(str);
+		System.out.println(str.length());
+		str.setLength(5);
+		System.out.println(str.length());
+		System.out.println(str.capacity());
+		str.insert(3, "abc");
+		str.replace(0, 3, "def");
+		char[] charArr = new char[10];
+		str.getChars(3, 5, charArr, 0);
+	}
+
+}

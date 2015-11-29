@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;strBuf&apos; in &apos;DeleteVowels.main(...)&apos; to &apos;str&apos;&#x0A;- Original project: &apos;DeleteVowels&apos;&#x0A;- Original element: &apos;DeleteVowels.main(String[]).strBuf&apos;&#x0A;- Renamed element: &apos;strBuf&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;strBuf&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{DeleteVowels.java[DeleteVowels~main~\[QString;@strBuf!430!481!443!448!QStringBuffer;!0!false" name="str" references="true" stamp="1448730628733" version="1.0"/>
+</session>

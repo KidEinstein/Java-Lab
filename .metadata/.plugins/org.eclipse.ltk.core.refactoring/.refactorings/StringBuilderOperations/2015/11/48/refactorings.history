@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;charArr&apos; in &apos;StringBuilderOperations.main(...)&apos; to &apos;charArray&apos;&#x0A;- Original project: &apos;StringBuilderOperations&apos;&#x0A;- Original element: &apos;StringBuilderOperations.main(String[]).charArr&apos;&#x0A;- Renamed element: &apos;charArr&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;charArr&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{StringBuilderOperations.java[StringBuilderOperations~main~\[QString;@charArr!631!660!638!644!\[C!0!false" name="charArray" references="true" stamp="1448730655181" version="1.0"/>
+</session>
