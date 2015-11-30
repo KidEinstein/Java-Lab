@@ -1,0 +1,13 @@
+import java.applet.Applet;
+import java.awt.TextField;
+
+public class FactorialReverseAwt extends Applet {
+	
+	public void init() {
+		TextField numberTextField = new TextField(10);
+
+		add(numberTextField);
+	}
+	
+	
+}

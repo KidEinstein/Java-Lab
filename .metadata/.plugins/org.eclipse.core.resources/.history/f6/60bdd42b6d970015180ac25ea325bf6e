@@ -1,0 +1,73 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.Scanner;
+
+public class CalculatorAwt extends Applet implements KeyListener
+{
+	int x,y;
+	int val;
+	TextField a,b;
+	TextField res;
+	
+	public void init()
+	{
+		a = new TextField(10);
+		add(a);
+		b = new TextField(10);
+		add(b);
+		res = new TextField(10);
+		res.setEditable(false);
+		add(res);
+		b.addKeyListener(this);
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) 
+	{
+		// TODO Auto-generated method stub
+		if(e.getKeyChar()=='a')
+		{
+			val = x+y;
+		}
+		
+		else if(e.getKeyChar()=='m')
+		{
+			val = x*y;
+		}
+		else if(e.getKeyChar()=='d')
+		{
+			val = x/y;
+
+		}
+		else if(e.getKeyChar()=='m')
+		{
+			val = x-y;
+		}
+		
+		res.setText(String.valueOf(val));
+	}
+	
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getKeyCode() == KeyEvent.VK_ENTER)
+		{
+			x = Integer.parseInt(a.getText().toString());
+			y = Integer.parseInt(b.getText().toString());
+			
+			a.setEditable(false);
+			b.setEditable(false);
+		}
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

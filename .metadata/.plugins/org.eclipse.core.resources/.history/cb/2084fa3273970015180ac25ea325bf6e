@@ -1,0 +1,23 @@
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ColorButtonsAwt extends Applet implements ActionListener {
+	Button redButton, yellowButton, blueButton, orangeButton, blackButton, pinkButton;
+	@Override
+	public void init() {
+		redButton = new Button("Red");
+		yellowButton = new Button("Yellow");
+		blueButton = new Button("Blue");
+		orangeButton = new Button("Orange");
+		blackButton = new Button("Black");
+		pinkButton = new Button("Pink");
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

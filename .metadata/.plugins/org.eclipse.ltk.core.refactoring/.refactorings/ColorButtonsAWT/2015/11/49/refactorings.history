@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ColorButtonsAWT&apos; to &apos;ColorButtonsAwt&apos;&#x0A;- Original project: &apos;ColorButtonsAWT&apos;&#x0A;- Original element: &apos;ColorButtonsAWT&apos;&#x0A;- Renamed element: &apos;ColorButtonsAwt&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ColorButtonsAWT&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ColorButtonsAWT.java[ColorButtonsAWT" matchStrategy="1" name="ColorButtonsAwt" qualified="false" references="true" similarDeclarations="false" stamp="1448895345189" textual="false" version="1.0"/>
+</session>
