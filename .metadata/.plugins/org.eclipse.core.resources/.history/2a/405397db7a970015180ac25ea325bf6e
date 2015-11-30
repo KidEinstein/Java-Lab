@@ -1,0 +1,12 @@
+
+public class StringOperations {
+	public static void main(String args[]) {
+		String name = new String("anirudh");
+		char[] nameCharArray = new char[10];
+		name.getChars(0, 3, nameCharArray, 0);
+		System.out.println(nameCharArray);
+		String newName = name.replace('a', 'b');
+		System.out.println(newName);
+		System.out.println(name.charAt(3));
+	}
+}
