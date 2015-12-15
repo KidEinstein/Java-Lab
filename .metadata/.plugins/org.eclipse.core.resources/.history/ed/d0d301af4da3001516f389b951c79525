@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Student {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		String[] names = new String[n];
+		int[] marks = new int[n]
+		System.out.println("Enter name and marks of n students");
+		for (int i = 0; i < n; i++) {
+			names[i] = in.next();
+			marks[i] = in.nextInt();
+		}
+		System.out.println("Enter student to retrieve");
+		int index = in.nextInt();
+		try {
+			System.out.println(names[index] + marks[index]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}
