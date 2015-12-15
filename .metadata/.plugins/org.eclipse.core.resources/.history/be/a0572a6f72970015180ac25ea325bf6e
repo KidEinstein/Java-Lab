@@ -1,6 +1,0 @@
-import java.applet.Applet;
-import java.awt.event.ActionListener;
-
-public class ColorButtonsAWT extends Applet implements ActionListener {
-	
-}

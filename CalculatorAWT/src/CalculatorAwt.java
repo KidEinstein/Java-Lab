@@ -19,29 +19,20 @@ public class CalculatorAwt extends Applet implements KeyListener {
 	}
 	@Override
 	public void keyTyped(KeyEvent e) {
-		System.out.println("Hello");
-		int number1;
-		int number2;
+		int number1 = Integer.parseInt(number1TextField.getText());
+		int number2 = Integer.parseInt(number2TextField.getText());
 		int answer = 0;
 		switch (e.getKeyChar()) {
 		case 'a':
-			number1 = Integer.parseInt(number1TextField.getText());
-			number2 = Integer.parseInt(number2TextField.getText());
 			answer = number1 + number2;
 			break;
 		case 's':
-			number1 = Integer.parseInt(number1TextField.getText());
-			number2 = Integer.parseInt(number2TextField.getText());
 			answer = number1 - number2;
 			break;
 		case 'd':
-			number1 = Integer.parseInt(number1TextField.getText());
-			number2 = Integer.parseInt(number2TextField.getText());
 			answer = number1 / number2;
 			break;
 		case 'm':
-			number1 = Integer.parseInt(number1TextField.getText());
-			number2 = Integer.parseInt(number2TextField.getText());
 			answer = number1 * number2;
 			break;
 		default:

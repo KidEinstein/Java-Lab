@@ -1,0 +1,12 @@
+import java.applet.Applet;
+import java.awt.TextField;
+
+public class ReverseAwt extends Applet {
+	TextField tf;
+	
+	@Override
+	public void init() {
+		tf = new TextField(5);
+		add(tf);
+	}
+}

@@ -1,0 +1,5 @@
+package quad1;
+
+public interface Quadratic {
+
+}

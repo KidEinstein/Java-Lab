@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Student {
+	String usn, name;
+	int m1,m2,m3;
+	Student() {
+		
+	}
+	Student(String a, String b) {
+		usn = a;
+		name = b;
+		m1=m2=m3=0;
+	}
+	Student(String a, String b, int x, int y, int z)
+	{
+		usn = a;
+		name = b;
+		m1 = x;
+		m2 = y;
+		m3 = z;
+	}
+	void display() {
+		System.out.println("USN: " + usn +" Name: " + name);
+		System.out.println("Subject 1 marks: " + m1 + " Subject 2 marks: " + m2 + " Subject 3 marks: " + m3);
+	}
+	
+	public static void main(String args[]) {
+		Student s1 = new Student();
+		Student s2 = new Student("1MS", "Anirudh");
+		Student s3 = new Student("1MS", "Tazo", 1, 2, 3);
+		Student[] students = new Student[]{s1, s2, s3};
+		for (int i = 0; i < students.length; i++) {
+			students[i].display();
+		}
+		
+	}
+}

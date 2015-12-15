@@ -1,7 +1,0 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class DeleteVowels {
-	Scanner in = new Scanner(System.in);
-	ArrayList<Character> vowels = new ArrayList<Character>();
-}

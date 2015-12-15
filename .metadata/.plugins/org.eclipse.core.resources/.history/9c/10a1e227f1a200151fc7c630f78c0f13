@@ -1,0 +1,32 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class MarkSheet {
+	static Scanner in = new Scanner(System.in);
+	String driver = "com.mysql.jdbc.Driver";
+	String url = "jdbc:mysql://localhost:3306/";
+	String dbName = "javalab";
+	String user = "root";
+	String password = "";
+	Connection conn;
+	
+	public MarkSheet() {
+		try {
+			Class.forName(driver);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			conn = DriverManager.getConnection(url);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		String query = ""
+	}
+
+}

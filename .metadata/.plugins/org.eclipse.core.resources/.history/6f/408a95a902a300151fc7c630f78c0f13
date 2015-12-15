@@ -1,0 +1,16 @@
+
+public class CosCalc implements Runnable {
+	int[]  arr;
+	int length;
+	public void CosCalc(int[] val, int lenght) {
+		arr = val;
+		this.length = lenght;
+	}
+	@Override
+	public void run() {
+		for (double i = 0; i < lenght; i++) {
+			arr[i] = Math.cos(i);
+		}
+	}
+
+}

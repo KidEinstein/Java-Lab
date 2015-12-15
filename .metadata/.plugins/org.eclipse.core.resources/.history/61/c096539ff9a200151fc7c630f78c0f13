@@ -1,0 +1,7 @@
+
+public class MarksEligible extends Exception {
+	String message;
+	public MarksEligible(String m) {
+		message = m;
+	}
+}

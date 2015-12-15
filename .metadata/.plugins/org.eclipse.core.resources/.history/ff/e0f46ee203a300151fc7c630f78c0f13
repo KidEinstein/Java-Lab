@@ -1,0 +1,8 @@
+
+public class Main {
+	public static void main(String args[]) {
+		double[] val = new double[100];
+		
+		SinCalc sc = new SinCalc(val, 100)
+	}
+}

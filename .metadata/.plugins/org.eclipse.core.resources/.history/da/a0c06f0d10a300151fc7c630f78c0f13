@@ -1,0 +1,15 @@
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.TextField;
+
+public class ReverseAwt extends Applet {
+	TextField tf;
+	Button b;
+	@Override
+	public void init() {
+		tf = new TextField(5);
+		b = new Button("Factorial");
+		add(tf);
+		add(b);
+	}
+}
