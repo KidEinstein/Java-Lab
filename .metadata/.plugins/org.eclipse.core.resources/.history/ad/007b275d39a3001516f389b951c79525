@@ -1,0 +1,12 @@
+
+public class MyThread extends Thread {
+	int threadNum;
+	
+	public MyThread(int num) {
+		threadNum = num;
+	}
+	@Override
+	public void run() {
+		System.out.println("Executing thread ");
+	}
+}
