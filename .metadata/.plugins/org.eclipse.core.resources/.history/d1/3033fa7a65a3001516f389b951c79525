@@ -1,0 +1,14 @@
+
+public class Element {
+	int x;
+	boolean consumed = true;
+	synchronized void set(int x) {
+		if (consumed) {
+			this.x = x;
+			System.out.println("Set: " + x);
+		}
+	}
+	synchronized void get() {
+		System.out.println("Get: " + x);
+	}
+}

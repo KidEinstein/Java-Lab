@@ -1,0 +1,21 @@
+
+public class Element {
+	int x;
+	boolean consumed = true;
+	synchronized void set(int x) {
+		if (!consumed) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		this.x = x;
+		System.out.println("Set: " + x);
+		notify();
+	}
+	
+	synchronized void get() {
+		System.out.println("Get: " + x);
+	}
+}

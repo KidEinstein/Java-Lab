@@ -1,0 +1,8 @@
+
+public class Producer {
+	Element e;
+	public Producer(Element e) {
+		this.e = e;
+	}
+	
+}

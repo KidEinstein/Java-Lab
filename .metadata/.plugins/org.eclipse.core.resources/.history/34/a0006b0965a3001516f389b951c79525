@@ -1,0 +1,12 @@
+
+public class Main {
+	public static void main(String[] args) {
+		Element e = new Element();
+		Producer p = new Producer(e);
+		Consumer c = new Consumer(e);
+		p.start();
+		c.start();
+		p.join();
+		c.join();
+	}
+}

@@ -1,0 +1,15 @@
+
+public class Producer extends Thread {
+	Element e;
+	public Producer(Element e) {
+		this.e = e;
+	}
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			e.set(i);
+			Thread.sleep(1000);
+		}
+	}
+		
+}
