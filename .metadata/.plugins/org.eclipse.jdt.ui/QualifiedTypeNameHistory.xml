@@ -29,5 +29,12 @@
 <fullyQualifiedTypeName name="java.awt.TextField"/>
 <fullyQualifiedTypeName name="java.awt.Button"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="MyThread"/>
+<fullyQualifiedTypeName name="ThreadPriority"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="Element"/>
+<fullyQualifiedTypeName name="Producer"/>
+<fullyQualifiedTypeName name="Consumer"/>
 </qualifiedTypeNameHistroy>
