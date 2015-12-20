@@ -1,0 +1,26 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Server {
+
+	public static void main(String[] args) throws Exception {
+
+			Scanner in = new Scanner(System.in);
+			ServerSocket serverSocket = new ServerSocket(8080);
+			Socket socket;
+			while (true) {
+				socket = serverSocket.accept();
+				DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+				DataInputStream dis = new DataInputStream(socket.getInputStream());
+				String message = in.nextLine();
+				dos.writeUTF(message);
+				System.out.println("Client says: " + dis.readUTF());
+			}
+			serverSocket.close();
+	}
+	
+}
